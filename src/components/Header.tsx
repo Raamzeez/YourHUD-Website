@@ -16,16 +16,16 @@ const Header: FC = () => {
       <div className="w-2/12"></div>
       <div className="w-7/12 h-[10vh] flex row-span-full">
         <div className="w-1/4 h-[10vh] flex justify-center items-center">
-          <a href="#features">Features</a>
+          <a href="/#features">Features</a>
         </div>
         <div className="w-1/4 h-[10vh] flex justify-center items-center">
-          <a href="#demo">Demo</a>
+          <a href="/#demo">Demo</a>
         </div>
         <div className="w-1/4 h-[10vh] flex justify-center items-center">
-          <a href="#support">Support</a>
+          <a href="/#support">Support</a>
         </div>
         <div className="w-1/4 h-[10vh] flex justify-center items-center">
-          <a href="#policy">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </div>
       </div>
       <div className="w-3/12 h-[10vh]" />
