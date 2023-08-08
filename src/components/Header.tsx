@@ -5,13 +5,15 @@ const Header: FC = () => {
   return (
     <div className="w-full flex justify-center items-center mx-auto h-[10vh] row-span-full bg-white dark:bg-black shadow">
       <div className="w-1/12 h-[10vh] flex justify-center items-center">
-        <Image
-          src={"/images/YourHUD_Logo_Updated_Compressed.jpg"}
-          alt="YourHUD Logo"
-          width={50}
-          height={50}
-          className="rounded-lg shadow-lg cursor-pointer"
-        />
+        <a href="/">
+          <Image
+            src={"/images/YourHUD_Logo_Updated_Compressed.jpg"}
+            alt="YourHUD Logo"
+            width={50}
+            height={50}
+            className="rounded-lg hover:shadow-xl duration-300 cursor-pointer"
+          />
+        </a>
       </div>
       <div className="w-2/12"></div>
       <div className="w-7/12 h-[10vh] flex row-span-full">
@@ -22,7 +24,7 @@ const Header: FC = () => {
           <a href="/#demo">Demo</a>
         </div>
         <div className="w-1/4 h-[10vh] flex justify-center items-center">
-          <a href="/#support">Support</a>
+          <a href="/contact">Contact</a>
         </div>
         <div className="w-1/4 h-[10vh] flex justify-center items-center">
           <a href="/privacy">Privacy Policy</a>
