@@ -24,6 +24,7 @@ import Features from "@/components/Features";
 import Jumbotron from "@/components/Jumbotron";
 import HUDOverview from "@/components/HUDOverview";
 import Demo from "@/components/Demo";
+import Footer from "@/components/Footer";
 
 const Home: FC = () => {
   return (
@@ -35,6 +36,7 @@ const Home: FC = () => {
         <Features />
         <Demo />
       </main>
+      <Footer />
     </>
   );
 };

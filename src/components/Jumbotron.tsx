@@ -3,8 +3,8 @@ import React, { FC } from "react";
 
 const Jumbotron: FC = () => {
   return (
-    <div className="bg-[url('https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-no-repeat bg-cover h-[90vh] w-full flex relative items-center justify-center flex-col">
-      <h1 className="text-5xl text-white animate__animated animate__fadeInDown">
+    <div className="dark:bg-[url('https://images.pexels.com/photos/169677/pexels-photo-169677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-[url('https://images.pexels.com/photos/185662/pexels-photo-185662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-no-repeat bg-cover h-[90vh] w-full flex relative items-center justify-center flex-col">
+      <h1 className="text-5xl m-5 text-white p-3 animate__animated animate__fadeInDown">
         Drive The Future Today
       </h1>
       <h1 className="text-white mt-10 animate__animated animate__fadeInDown">
@@ -19,6 +19,11 @@ const Jumbotron: FC = () => {
         width={300}
         height={75}
         className="absolute bottom-0 mb-10 cursor-pointer"
+        onClick={() =>
+          window.open(
+            "https://apps.apple.com/us/app/yourhud/id1605498880?platform=iphone"
+          )
+        }
       />
     </div>
   );

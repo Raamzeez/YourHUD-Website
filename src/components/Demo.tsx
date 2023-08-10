@@ -19,8 +19,8 @@ const Demo: FC = () => {
       <div className="h-1/6 w-full flex items-center justify-center flex-col bg-slate-400">
         <h1 className="text-3xl">Demo</h1>
       </div>
-      <div className="h-5/6 w-full flex flex-row row-span-full bg-blue-600">
-        <div className="w-1/2 h-full flex items-center justify-center bg-purple-600">
+      <div className="h-5/6 w-full flex flex-row row-span-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="w-1/2 h-full flex items-center justify-center">
           <div className="h-3/4 w-3/4 flex items-center justify-center dark:bg-slate-800 bg-white rounded-lg shadow-md">
             <ul className="list-desc">
               {profileFeatures
@@ -35,10 +35,10 @@ const Demo: FC = () => {
             </ul>
           </div>
         </div>
-        <div className="w-1/2 h-full flex items-center justify-center bg-orange-600">
+        <div className="w-1/2 h-full flex items-center justify-center">
           <Image
             alt="Default HUD"
-            src={"/images/test.png"}
+            src={"/images/defaulthuddemo.png"}
             height={800}
             width={500}
           />
