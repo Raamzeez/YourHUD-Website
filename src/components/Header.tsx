@@ -16,6 +16,7 @@ const Header: FC = () => {
       } mx-auto ${
         !isOpen ? "h-[10vh]" : "h-[40vh]"
       } duration-300 row-span-full bg-white dark:bg-black shadow`}
+      style={{ minHeight: 75 }}
     >
       <div
         className={`w-1/12 h-full flex ${

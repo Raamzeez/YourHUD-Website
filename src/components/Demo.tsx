@@ -3,6 +3,7 @@ import ProfileButton from "./ProfileButton";
 import Image from "next/image";
 import Profile from "@/types/profile";
 import profileFeatures from "@/data/profileFeatures";
+import { nanoid } from "nanoid";
 
 interface iState {
   profile: Profile;
@@ -27,7 +28,10 @@ const Demo: FC = () => {
                 .filter(({ profile }) => profile === state.profile)[0]
                 .features.map((feature) => {
                   return (
-                    <li className={`${state.profile !== "sports" && "m-5"}`}>
+                    <li
+                      className={`${state.profile !== "sports" && "m-5"}`}
+                      key={nanoid()}
+                    >
                       {feature}
                     </li>
                   );

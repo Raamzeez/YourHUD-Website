@@ -11,8 +11,11 @@ import {
   faMapPin,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 const Features: FC = () => {
+  const { height, width } = useWindowDimensions();
+
   return (
     <div
       id="features"
@@ -20,7 +23,7 @@ const Features: FC = () => {
     >
       <div className="h-1/4 w-full flex items-center justify-center flex-col">
         <h1 className="text-3xl">Features</h1>
-        <p className="mt-5">
+        <p className="mt-5 w-4/5 text-center">
           Simple open our app, place your phone horizontally on the dashboard of
           your car, and enjoy all the features below
         </p>
@@ -28,36 +31,24 @@ const Features: FC = () => {
       <div className="h-3/4 w-full flex flex-col items-center justify-center">
         <div className="h-1/2 w-full flex flex-row row-span-full">
           <Feature icon={faGauge} title="Speedometer" />
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faCloudSun} size={"3x"} />
-            <h1 className="mt-5 font-medium">Weather</h1>
-          </div>
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faCompass} size={"3x"} />
-            <h1 className="mt-5 font-medium">Heading & Compass</h1>
-          </div>
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faMapPin} size={"3x"} />
-            <h1 className="mt-5 font-medium">Coordinates</h1>
-          </div>
+          <Feature icon={faCloudSun} title="Weather" />
+          <Feature
+            icon={faCompass}
+            title={width > 640 ? "Heading & Compass" : "Compass"}
+          />
+          <Feature icon={faMapPin} title="Coordinates" />
         </div>
         <div className="h-1/2 w-full flex flex-row row-span-full">
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faCrosshairs} size={"3x"} />
-            <h1 className="mt-5 font-medium">G-Force Gauge</h1>
-          </div>
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faArrowsRotate} size={"3x"} />
-            <h1 className="mt-5 font-medium">Pitch & Yaw Readings</h1>
-          </div>
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faClock} size={"3x"} />
-            <h1 className="mt-5 font-medium">Clock</h1>
-          </div>
-          <div className="h-full w-1/4 flex flex-col justify-center items-center">
-            <FontAwesomeIcon icon={faCar} size={"3x"} />
-            <h1 className="mt-5 font-medium">Car Logo</h1>
-          </div>
+          <Feature
+            icon={faCrosshairs}
+            title={width > 640 ? "G-Force Gauge" : "G-Force"}
+          />
+          <Feature
+            icon={faArrowsRotate}
+            title={width > 640 ? "Pitch & Roll Readings" : "Pitch & Roll"}
+          />
+          <Feature icon={faClock} title="Clock" />
+          <Feature icon={faCar} title={width > 640 ? "Car Logo" : "Logo"} />
         </div>
       </div>
     </div>

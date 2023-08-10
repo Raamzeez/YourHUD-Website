@@ -2,6 +2,7 @@ import ContactFeature from "@/components/ContactFeature";
 import Header from "@/components/Header";
 import contactFeatures from "@/data/contactFeatures";
 import React, { FC } from "react";
+import { nanoid } from "nanoid";
 
 const Contact: FC = () => {
   return (
@@ -18,7 +19,14 @@ const Contact: FC = () => {
         </a>
         <div className="h-96 w-full mt-24 flex flex-row row-span-full">
           {contactFeatures.map(({ icon, title, body }) => {
-            return <ContactFeature icon={icon} title={title} body={body} />;
+            return (
+              <ContactFeature
+                icon={icon}
+                title={title}
+                body={body}
+                key={nanoid()}
+              />
+            );
           })}
         </div>
       </main>

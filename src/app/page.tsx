@@ -1,24 +1,6 @@
 "use client";
 
-import React, { FC, useState } from "react";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowsRotate,
-  faCar,
-  faClock,
-  faCloudSun,
-  faCompass,
-  faCrosshairs,
-  faGauge,
-  faMap,
-  faMapPin,
-} from "@fortawesome/free-solid-svg-icons";
-import "animate.css";
-import Feature from "../components/Feature";
-import ProfileButton from "@/components/ProfileButton";
-import Profile from "@/types/profile";
-import profileFeatures from "@/data/profileFeatures";
+import React, { FC } from "react";
 import Header from "@/components/Header";
 import Features from "@/components/Features";
 import Jumbotron from "@/components/Jumbotron";
