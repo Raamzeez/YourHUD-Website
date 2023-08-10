@@ -14,12 +14,12 @@ const contactFeatures: iContactFeature[] = [
   {
     icon: faBoltLightning,
     title: "Quick Response",
-    body: "You'll get a quick resopnse from us, that's our guarantee!.",
+    body: "You'll get a quick response from us, that's our guarantee!.",
   },
   {
     icon: faComment,
     title: "Chat about anything",
-    body: "Whether you need help with a technical issue, want to suggest a feature request, or simply want to chat about the app, feel free to reach out to us!",
+    body: "Whether you need help with a technical issue, suggest a feature request, or want to chat about the app, feel free to reach out to us!",
   },
 ];
 

@@ -3,6 +3,7 @@
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import Hamburger from "hamburger-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { FC, useState } from "react";
 
 const Header: FC = () => {
@@ -14,9 +15,9 @@ const Header: FC = () => {
       className={`w-full flex ${
         !isOpen && "justify-center items-center"
       } mx-auto ${
-        !isOpen ? "h-[10vh]" : "h-[40vh]"
+        !isOpen ? "h-[10vh]" : "h-[50vh]"
       } duration-300 row-span-full bg-white dark:bg-black shadow`}
-      style={{ minHeight: 75 }}
+      style={{ minHeight: isOpen ? 200 : 75 }}
     >
       <div
         className={`w-1/12 h-full flex ${
@@ -36,18 +37,36 @@ const Header: FC = () => {
         )}
         {width <= 640 && isOpen && (
           <div className="ml-10">
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/#features">Features</a>
-            </div>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/#demo">Demo</a>
-            </div>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/contact">Contact</a>
-            </div>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/privacy">Privacy Policy</a>
-            </div>
+            <Link
+              href="/#features"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Features
+            </Link>
+            <Link
+              href="/#gallery"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Gallery
+            </Link>
+            <Link
+              href="/#demo"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Demo
+            </Link>
+            <Link
+              href="/contact"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/privacy"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Privacy Policy
+            </Link>
           </div>
         )}
       </div>
@@ -55,18 +74,36 @@ const Header: FC = () => {
       <div className="w-7/12 h-[full] flex row-span-full">
         {width > 640 && (
           <>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/#features">Features</a>
-            </div>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/#demo">Demo</a>
-            </div>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/contact">Contact</a>
-            </div>
-            <div className="w-1/4 h-[10vh] flex justify-center items-center">
-              <a href="/privacy">Privacy Policy</a>
-            </div>
+            <Link
+              href="/#features"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Features
+            </Link>
+            <Link
+              href="/#gallery"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Gallery
+            </Link>
+            <Link
+              href="/#demo"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Demo
+            </Link>
+            <Link
+              href="/contact"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/privacy"
+              className="w-1/4 h-[10vh] flex justify-center items-center"
+            >
+              Privacy Policy
+            </Link>
           </>
         )}
       </div>

@@ -1,9 +1,12 @@
+"use client";
+
 import React, { FC, useState } from "react";
 import ProfileButton from "./ProfileButton";
 import Image from "next/image";
 import Profile from "@/types/profile";
 import profileFeatures from "@/data/profileFeatures";
 import { nanoid } from "nanoid";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 interface iState {
   profile: Profile;
@@ -11,6 +14,8 @@ interface iState {
 
 const Demo: FC = () => {
   const [state, setState] = useState<iState>({ profile: "default" });
+
+  const { height, width } = useWindowDimensions();
 
   return (
     <div
