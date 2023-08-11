@@ -65,7 +65,7 @@ const Header: FC = () => {
               href="/privacy"
               className="w-1/4 h-[10vh] flex justify-center items-center"
             >
-              Privacy Policy
+              Privacy
             </Link>
           </div>
         )}
@@ -102,7 +102,7 @@ const Header: FC = () => {
               href="/privacy"
               className="w-1/4 h-[10vh] flex justify-center items-center"
             >
-              Privacy Policy
+              Privacy
             </Link>
           </>
         )}

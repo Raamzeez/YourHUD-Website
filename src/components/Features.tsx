@@ -22,7 +22,7 @@ const Features: FC = () => {
       className="h-[70vh] w-full flex items-center flex-col col-span-full bg-gradient-to-r from-purple-300 to-pink-300 dark:from-cyan-500 dark:to-blue-600"
     >
       <div className="h-1/4 w-full flex items-center justify-center flex-col">
-        <h1 className="text-3xl">Features</h1>
+        <h1 className="text-3xl mt-5">Features</h1>
         <p className="mt-5 w-4/5 text-center">
           Simple open our app, place your phone horizontally on the dashboard of
           your car, and enjoy all the features below
