@@ -26,11 +26,13 @@ const Gallery: FC = () => {
   return (
     <div
       id="gallery"
-      className={`h-[75vh] w-full flex flex-col col-span-full dark:bg-slate-700`}
+      className={`${
+        width > 900 ? "h-[75vh]" : "h-fit"
+      } w-full flex flex-col col-span-full dark:bg-slate-700`}
     >
       <div className="h-1/5 w-full flex items-center justify-center flex-col">
-        <h1 className="text-3xl">Gallery</h1>
-        <p className="mt-3 font-light italic">More pictures soon!</p>
+        <h1 className="text-3xl mt-10">Gallery</h1>
+        <p className="m-5 font-light italic">More pictures soon!</p>
       </div>
       {width > 900 ? (
         <>
@@ -51,7 +53,7 @@ const Gallery: FC = () => {
         </>
       ) : (
         <div className="h-4/5 w-full">
-          <ImageGallery items={images} />;
+          <ImageGallery items={images} showFullscreenButton={false} />
         </div>
       )}
     </div>

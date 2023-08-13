@@ -19,7 +19,7 @@ const Jumbotron: FC = () => {
       <h1 className="text-5xl m-5 text-white p-3 animate__animated animate__fadeInDown">
         Drive The Future Today
       </h1>
-      <h1 className="text-white mt-10 animate__animated animate__fadeInDown">
+      <h1 className="text-white m-5 animate__animated animate__fadeInDown">
         The World's Most Advanced HUD App
       </h1>
       <div

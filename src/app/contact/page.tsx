@@ -21,7 +21,7 @@ const Contact: FC = () => {
         <a
           href="mailto:yourhud.communications@gmail.com"
           target="_blank"
-          className="mt-10 text-blue-500 hover:underline"
+          className="text-center mt-5 text-blue-500 hover:underline"
         >
           Email: yourhud.communications@gmail.com
         </a>
