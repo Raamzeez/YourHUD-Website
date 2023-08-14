@@ -53,6 +53,7 @@ const Demo: FC = () => {
             {profiles.map(({ title, key }) => {
               return (
                 <ProfileButton
+                  active={state.profile === key}
                   key={nanoid()}
                   label={title}
                   onClickHandler={() => setState({ ...state, profile: key })}
@@ -91,6 +92,7 @@ const Demo: FC = () => {
               return (
                 <ProfileButton
                   key={nanoid()}
+                  active={state.profile === key}
                   label={title}
                   onClickHandler={() => setState({ ...state, profile: key })}
                 />
@@ -123,6 +125,7 @@ const Demo: FC = () => {
             {profiles.map(({ title, key }) => {
               return (
                 <ProfileButton
+                  active={state.profile === key}
                   key={nanoid()}
                   label={title}
                   onClickHandler={() => setState({ ...state, profile: key })}

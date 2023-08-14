@@ -6,7 +6,7 @@ const HUDOverview: FC = () => {
 
   return (
     <div
-      className="h-[50vh] dark:bg-slate-800 bg-white w-full flex items-center flex-col col-span-full"
+      className="h-[50vh] dark:bg-slate-700 bg-white w-full flex items-center flex-col col-span-full"
       style={{ minHeight: width > 640 ? (width > 1000 ? 400 : 500) : 450 }}
     >
       <div className="w-full row-span-full h-full flex items-center justify-center">
@@ -38,7 +38,7 @@ const HUDOverview: FC = () => {
         </div>
         {width > 640 && (
           <div className="h-full w-1/2 flex items-center justify-center">
-            <div className="h-3/4 w-3/4 bg-[url('/images/test.png')] bg-cover shadow rounded-lg"></div>
+            <div className="h-3/4 w-3/4 bg-[url('/images/test.png')] bg-cover shadow rounded-lg border-none"></div>
           </div>
         )}
       </div>

@@ -38,12 +38,12 @@ const Jumbotron: FC = () => {
           />
         )}
       </div>
-      <Image
+      <img
         src={"/images/appstoredownload.png"}
         alt="App Store Download"
-        width={300}
-        height={75}
-        className="absolute bottom-0 mb-10 cursor-pointer"
+        width={130}
+        height={0}
+        className="absolute bottom-10 mb-10 hover:shadow-lg duration-200 cursor-pointer"
         onClick={() =>
           window.open(
             "https://apps.apple.com/us/app/yourhud/id1605498880?platform=iphone"

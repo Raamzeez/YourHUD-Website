@@ -16,7 +16,7 @@ const Header: FC = () => {
         !isOpen && "justify-center items-center"
       } mx-auto ${
         !isOpen ? "h-[10vh]" : "h-[50vh]"
-      } duration-300 row-span-full bg-white dark:bg-black shadow`}
+      } duration-300 row-span-full bg-white dark:bg-slate-900 shadow`}
       style={{ minHeight: isOpen ? 200 : 75 }}
     >
       <div
