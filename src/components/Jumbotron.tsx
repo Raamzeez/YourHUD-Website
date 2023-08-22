@@ -20,7 +20,7 @@ const Jumbotron: FC = () => {
         Drive The Future Today
       </h1>
       <h1 className="text-white m-5 animate__animated animate__fadeInDown">
-        The World's Most Advanced HUD App
+        The World&apos;s Most Advanced HUD App
       </h1>
       <div
         className="mt-24 h-10 w-32 rounded-3xl flex items-center justify-center cursor-pointer hover:w-40 bg-gradient-to-r from-cyan-200 to-blue-300 dark:from-cyan-500 dark:to-blue-600 hover:shadow-lg duration-300"

@@ -29,10 +29,11 @@ const HUDOverview: FC = () => {
               }`}
             >
               A HUD (Heads Up Display) is a display that projects information
-              onto a car's windshield, right in the driver's line of sight. It
-              can display information such as speed, gear, and more. HUDs are
-              becoming more and more common in modern vehicles, but if you don't
-              have one, you can still get the benefits of a HUD with YourHUD.
+              onto a car&apos;s windshield, right in the driver&apos;s line of
+              sight. It can display information such as speed, gear, and more.
+              HUDs are becoming more and more common in modern vehicles, but if
+              you don&apos;t have one, you can still get the benefits of a HUD
+              with YourHUD.
             </p>
           </div>
         </div>
