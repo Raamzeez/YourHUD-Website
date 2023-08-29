@@ -1,13 +1,15 @@
 "use client";
 
+import links from "@/data/links";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import Hamburger from "hamburger-react";
+import { nanoid } from "nanoid";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC, useState } from "react";
 
 const Header: FC = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -20,8 +22,8 @@ const Header: FC = () => {
       style={{ minHeight: isOpen ? 200 : 75 }}
     >
       <div
-        className={`w-1/12 h-full flex ${
-          !isOpen && "justify-center items-center"
+        className={`${
+          !isOpen && "justify-center items-center w-1/12 h-full flex"
         }`}
       >
         {!isOpen && (
@@ -37,36 +39,17 @@ const Header: FC = () => {
         )}
         {width <= 640 && isOpen && (
           <div className="ml-10">
-            <Link
-              href="/#features"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Features
-            </Link>
-            <Link
-              href="/#gallery"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Gallery
-            </Link>
-            <Link
-              href="/#demo"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Demo
-            </Link>
-            <Link
-              href="/contact"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/privacy"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Privacy
-            </Link>
+            {links.map(({ url, title }) => {
+              return (
+                <Link
+                  key={nanoid()}
+                  href={url}
+                  className="w-1/4 h-[10vh] flex justify-center items-center active:underline"
+                >
+                  {title}
+                </Link>
+              );
+            })}
           </div>
         )}
       </div>
@@ -74,36 +57,17 @@ const Header: FC = () => {
       <div className="w-7/12 h-[full] flex row-span-full">
         {width > 640 && (
           <>
-            <Link
-              href="/#features"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Features
-            </Link>
-            <Link
-              href="/#gallery"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Gallery
-            </Link>
-            <Link
-              href="/#demo"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Demo
-            </Link>
-            <Link
-              href="/contact"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/privacy"
-              className="w-1/4 h-[10vh] flex justify-center items-center"
-            >
-              Privacy
-            </Link>
+            {links.map(({ url, title }) => {
+              return (
+                <Link
+                  key={nanoid()}
+                  href={url}
+                  className="w-1/4 h-[10vh] flex justify-center items-center active:underline"
+                >
+                  {title}
+                </Link>
+              );
+            })}
           </>
         )}
       </div>
