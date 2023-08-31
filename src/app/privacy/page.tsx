@@ -7,13 +7,13 @@ const Privacy: FC = () => {
   return (
     <>
       <Header />
-      <main className="h-[90vh] flex w-full flex-col">
+      <article className="h-[90vh] flex w-full flex-col">
         <div className="h-full w-full flex flex-col bg-white dark:bg-slate-700 justify-center items-center">
           <h1 className="text-4xl font-montserrat">Privacy Policy</h1>
           <div className="mt-20 h-2/3 w-4/5 bg-gray-100 dark:bg-slate-800 shadow-lg rounded overflow-auto leading-7">
             <div className="text-center">
               <p className="text-left m-5 text-blue-500 font-semibold">
-                Effective Date: [9/6/23]
+                Effective Date: 9/6/23
               </p>
               {privacyPolicyData.map(({ title, subsections, messages }) => {
                 return (
@@ -26,9 +26,9 @@ const Privacy: FC = () => {
                         {subsections.map((subsection, index) => {
                           return (
                             <div key={nanoid()}>
-                              <p className="text-left m-10 text-xl font-raleway">
+                              <h3 className="text-left m-10 text-xl font-raleway">
                                 {subsection}
-                              </p>
+                              </h3>
                               <p className="text-left ml-20">
                                 {messages[index]}
                               </p>
@@ -45,12 +45,12 @@ const Privacy: FC = () => {
                 );
               })}
               <p className="m-5 text-left text-green-500 font-semibold">
-                Last updated: [9/10/23]
+                Last updated: 9/10/23
               </p>
             </div>
           </div>
         </div>
-      </main>
+      </article>
     </>
   );
 };

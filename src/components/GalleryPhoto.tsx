@@ -11,7 +11,13 @@ const GalleryPhoto: FC<iProps> = ({ imagePath }) => {
       <div
         className={`h-40 hover:h-52 w-60 hover:w-80 hover:border-solid hover:border-4 hover:border-gray-400 rounded-xl shadow-sm hover:shadow-lg duration-200 cursor-pointer bg-white`}
       >
-        <img src={imagePath} alt="Test" className="h-full w-full rounded-md" />
+        <Image
+          src={imagePath}
+          alt="Test"
+          className="h-full w-full rounded-md"
+          width={400}
+          height={400}
+        />
       </div>
     </div>
   );

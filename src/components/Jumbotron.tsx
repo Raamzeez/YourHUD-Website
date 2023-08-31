@@ -37,7 +37,7 @@ const Jumbotron: FC = () => {
           />
         )}
       </a>
-      <img
+      <Image
         src={"/images/appstoredownload.png"}
         alt="App Store Download"
         width={130}
