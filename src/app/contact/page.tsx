@@ -17,7 +17,7 @@ const Contact: FC = () => {
         className="h-[90vh] flex w-full flex-col items-center bg-white dark:bg-slate-800"
         style={{ minHeight: 600 }}
       >
-        <h1 className="mt-10 text-3xl">Contact</h1>
+        <h1 className="mt-10 text-3xl font-montserrat">Contact</h1>
         <a
           href="mailto:yourhud.communications@gmail.com"
           target="_blank"

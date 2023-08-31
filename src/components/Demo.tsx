@@ -29,7 +29,7 @@ const Demo: FC = () => {
       }
     >
       <div className="h-1/6 w-full flex items-center justify-center flex-col">
-        <h1 className="text-3xl">Demo</h1>
+        <h1 className="text-3xl font-montserrat">Demo</h1>
       </div>
       {width > 1000 && (
         <div className={`h-5/6 w-full flex flex-row row-span-full`}>

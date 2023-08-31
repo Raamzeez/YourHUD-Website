@@ -14,8 +14,8 @@ const Features: FC = () => {
       style={{ minHeight: 600 }}
     >
       <div className="h-1/4 w-full flex items-center justify-center flex-col">
-        <h1 className="text-3xl mt-10">Features</h1>
-        <p className="mt-5 w-4/5 text-center">
+        <h1 className="text-3xl mt-10 font-montserrat">Features</h1>
+        <p className="mt-5 w-4/5 text-center font-montserrat">
           Simple open our app, place your phone horizontally on the dashboard of
           your car, and enjoy all the features below
         </p>

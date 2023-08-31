@@ -16,10 +16,10 @@ const Jumbotron: FC = () => {
       className="dark:bg-[url('https://images.pexels.com/photos/169677/pexels-photo-169677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-[url('https://images.pexels.com/photos/185662/pexels-photo-185662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-no-repeat bg-cover h-[90vh] w-full flex relative items-center justify-center flex-col"
       style={{ minHeight: width > 340 ? (width > 640 ? 650 : 700) : 750 }}
     >
-      <h1 className="text-5xl m-5 text-white p-3 animate__animated animate__fadeInDown">
+      <h1 className="text-5xl m-5 text-white p-3 animate__animated animate__fadeInDown font-montserrat">
         Drive The Future Today
       </h1>
-      <h1 className="text-white m-5 animate__animated animate__fadeInDown">
+      <h1 className="text-white m-5 font-montserrat animate__animated animate__fadeInDown">
         The World&apos;s Most Advanced HUD App
       </h1>
       <a

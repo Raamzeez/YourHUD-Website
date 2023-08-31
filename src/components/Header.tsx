@@ -44,7 +44,7 @@ const Header: FC = () => {
                 <Link
                   key={nanoid()}
                   href={url}
-                  className="w-1/4 h-[10vh] flex justify-center items-center active:underline"
+                  className="w-1/4 h-[10vh] font-raleway flex justify-center items-center active:underline"
                 >
                   {title}
                 </Link>
@@ -62,7 +62,7 @@ const Header: FC = () => {
                 <Link
                   key={nanoid()}
                   href={url}
-                  className="w-1/4 h-[10vh] flex justify-center items-center active:underline"
+                  className="w-1/4 h-[10vh] font-raleway flex justify-center items-center active:underline"
                 >
                   {title}
                 </Link>

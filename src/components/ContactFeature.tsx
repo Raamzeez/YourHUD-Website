@@ -25,7 +25,11 @@ const ContactFeature: FC<iContactFeature & { className?: string }> = ({
             <FontAwesomeIcon icon={icon} size={"2xl"} />
           </div>
           <div className="h-1/6 w-full flex items-center justify-center">
-            <h1 className={`m-5 ${width > 330 ? "text-lg" : "text-sm"}`}>
+            <h1
+              className={`m-5 font-raleway ${
+                width > 330 ? "text-lg" : "text-sm"
+              }`}
+            >
               {title}
             </h1>
           </div>
