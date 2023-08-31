@@ -31,8 +31,10 @@ const Gallery: FC = () => {
       } w-full flex flex-col col-span-full dark:bg-slate-700`}
     >
       <div className="h-1/5 w-full flex items-center justify-center flex-col">
-        <h1 className="text-3xl mt-10">Gallery</h1>
-        <p className="m-5 font-light italic">More pictures soon!</p>
+        <h1 className="text-3xl mt-10 font-montserrat">Gallery</h1>
+        <p className="m-5 font-light italic font-montserrat">
+          More pictures soon!
+        </p>
       </div>
       {width > 900 ? (
         <>

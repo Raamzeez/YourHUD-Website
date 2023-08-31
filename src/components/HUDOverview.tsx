@@ -16,7 +16,7 @@ const HUDOverview: FC = () => {
           } flex-col col-span-full items-center justify-center`}
         >
           <div className="h-1/6 w-full flex items-center justify-center">
-            <p className="text-2xl">What is a HUD?</p>
+            <p className="text-2xl font-montserrat">What is a HUD?</p>
           </div>
           <div className="h-5/6 w-full flex items-center justify-center">
             <p
