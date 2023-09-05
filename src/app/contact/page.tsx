@@ -14,7 +14,9 @@ const Contact: FC = () => {
     <>
       <Header />
       <main
-        className="h-[90vh] flex w-full flex-col items-center bg-white dark:bg-slate-800"
+        className={`h-${
+          width > 640 ? "[90vh]" : "fit"
+        } flex w-full flex-col items-center bg-white dark:bg-slate-800`}
         style={{ minHeight: 600 }}
       >
         <h1 className="mt-10 text-3xl font-montserrat">Contact</h1>
